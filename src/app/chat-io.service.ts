@@ -58,10 +58,7 @@ export class ChatIoService {
         return observable;
     }
 
-    joinRoom(data)
-    {
-        this.socket.emit('join',data);
-    }
+
 
 
 }

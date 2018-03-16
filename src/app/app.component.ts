@@ -43,6 +43,7 @@ export class AppComponent {
       console.log('sendMessage');
 
         this._chatService.sendMessage({user:this.user, room:this.room, message:this.messageText});
+        this.messageText = null ;
     }
 
 }
