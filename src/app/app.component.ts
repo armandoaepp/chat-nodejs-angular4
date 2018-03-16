@@ -1,4 +1,4 @@
-/*import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import {ChatIoService} from './chat-io.service';
 
 @Component({
@@ -28,21 +28,26 @@ export class AppComponent {
     }
 
     join(){
+      console.log('join');
         this._chatService.joinRoom({user:this.user, room:this.room});
     }
 
     leave(){
+      console.log('leave');
+
         this._chatService.leaveRoom({user:this.user, room:this.room});
     }
 
     sendMessage()
     {
+      console.log('sendMessage');
+
         this._chatService.sendMessage({user:this.user, room:this.room, message:this.messageText});
     }
 
 }
-*/
 
+/*
 import { Component } from '@angular/core';
 import { WebsocketService } from './websocket.service';
 import { ChatService } from './chat.service';
@@ -74,4 +79,4 @@ export class AppComponent {
     // this.message = '';
   }
 
-}
+}*/
